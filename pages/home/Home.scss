@@ -1,3 +1,6 @@
+@import "../../src/constants.scss";
+
 .home {
-  background-color: red;
+  display: flex;
+  background-color: $grey;
 }

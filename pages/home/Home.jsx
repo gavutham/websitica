@@ -7,10 +7,14 @@ import "./Home.scss";
 const Home = () => {
   return (
     <div className="home">
-      <Sidebar />
-      <Top />
-      <Center />
-      <Bottom />
+      <div className="">
+        <Sidebar />
+      </div>
+      <div className="">
+        <Top />
+        <Center />
+        <Bottom />
+      </div>
     </div>
   );
 };

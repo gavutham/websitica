@@ -1,4 +1,10 @@
 import "./Bottom.scss";
+import {AiFillPlayCircle} from "react-icons/ai";
+import {BiSkipNext} from "react-icons/bi";
+import {BsShuffle} from "react-icons/bs";
+import {BiSkipPrevious} from "react-icons/bi";
+import {BiSolidVolumeFull} from "react-icons/bi";
+
 
 const Bottom = () => {
   const containerStyle = {
@@ -37,6 +43,8 @@ const Bottom = () => {
     backgroundColor: 'rgba(240, 240, 240, 0.5)', 
     padding: '20px',
     border: '1px solid #ccc',
+    justifyContent: "space-between", 
+    alignItems: "center", 
   };
 
   const flexItemStyle3 = {
@@ -56,11 +64,15 @@ const Bottom = () => {
         </div>
       </div>
       <div style={flexItemStyle2}>
+        <BsShuffle size={22} class="icon shuffle"/>
+        <BiSkipPrevious size={22} class="icon shuffle"/>
+        <AiFillPlayCircle size={22} className="icon selected" />
+        <BiSkipNext size={22} className="icon suffle" />
         <hr />
-        7/12
+      
       </div>
       <div style={flexItemStyle3}>
-        3/12
+        <BiSolidVolumeFull size={22} className="icon shuffle" />
         <hr />
       </div>
     </div>

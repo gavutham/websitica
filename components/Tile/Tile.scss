@@ -1,0 +1,17 @@
+.tile {
+  display: flex;
+  background-color: rgb(66, 66, 66);
+  border-radius: 15px;
+  padding: 5px 20px;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+
+  .second,
+  .third,
+  .fourth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

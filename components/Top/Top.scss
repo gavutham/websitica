@@ -1,0 +1,75 @@
+@import "../../src/constants.scss";
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    min-height: 50px;
+    align-items: center;
+    margin-left: 30px;
+
+    .icon {
+      margin-right: 10px;
+    }
+    input {
+      border: none;
+      background-color: transparent;
+    }
+
+    input:focus {
+      outline: none !important;
+    }
+  }
+
+  .bottom {
+    display: flex;
+
+    .right {
+      padding: 0 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 12px;
+      max-width: 50%;
+      .title {
+        color: cadetblue;
+        font-weight: 700;
+        font-size: 36px;
+      }
+
+      .desc,
+      .info {
+        color: $grey;
+        font-weight: 500;
+        font-size: 18px;
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          background-color: rgb(88, 88, 88);
+          padding: 10px;
+          color: rgb(160, 160, 160);
+          border-radius: 30px;
+
+          .icon {
+            padding: 0;
+            color: $yellow;
+          }
+        }
+      }
+    }
+  }
+}
